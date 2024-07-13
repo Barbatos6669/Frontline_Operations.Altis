@@ -1,1 +1,17 @@
 
+respawn = "BASE";
+respawnDelay = 5;
+respawnOnStart = -1;
+respawnTemplates[] = {"MenuPosition"};
+respawnButton = 1;
+
+class CfgRespawnPositions
+{
+    class WestRespawn
+    {
+        side = 1; // West side (BLUFOR)
+        position = "respawn_west"; // The marker name
+        marker = "respawn_west"; // The marker name
+        name = "Bunker Base Respawn"; // Display name for the respawn
+    };
+};
