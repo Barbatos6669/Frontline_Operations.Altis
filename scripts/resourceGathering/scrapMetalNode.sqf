@@ -6,16 +6,20 @@ systemChat "Scrap Metal Nodes Script initialized"; // Debug message to confirm t
 _markerArray = missionNamespace getVariable ["markerArray", []];
 
 // Check if the marker array is defined
-if (isNil "_markerArray" || {_markerArray isEqualTo []}) then {
+if (isNil "_markerArray" || {_markerArray isEqualTo []}) then 
+{
     systemChat "Error: Marker array not found"; // Debug message to confirm the marker array is missing
-} else {
+} 
+else 
+{
     // Loop through each marker and create a scrap metal node
     {
         private _markerPos = getMarkerPos _x; // Get the position of the current marker
         systemChat format ["Marker position: %1", _markerPos];
 
         // Create a scrap metal node at this marker position
-        if (typeName _markerPos == "ARRAY") then {
+        if (typeName _markerPos == "ARRAY") then 
+        {
             private _vehicle = createVehicle ["Land_Wreck_Hunter_F", _markerPos, [], 0, "CAN_COLLIDE"]; // Spawn a damaged vehicle model as the scrap metal node
 
             // Initialize the amount of scrap metal in the node
@@ -26,7 +30,9 @@ if (isNil "_markerArray" || {_markerArray isEqualTo []}) then {
 
             // Start the respawn script for this node
             [_markerPos] spawn compile preprocessFileLineNumbers "scripts\functions\fn_respawnScrapMetalNode.sqf";
-        } else {
+        } 
+        else 
+        {
             systemChat format ["Error: Marker position is not an array: %1", _markerPos];
         };
     } forEach _markerArray;

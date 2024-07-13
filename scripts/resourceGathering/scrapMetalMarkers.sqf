@@ -2,7 +2,8 @@
 
 // Description: This script contains the array of marker names for the scrap metal nodes.
 
-_markerArray = [
+_markerArray = 
+[
     "scrapMetalNode1",
     "scrapMetalNode2",
     "scrapMetalNode3"

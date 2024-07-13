@@ -3,8 +3,12 @@
 params ["_pos"];
 
 // Function to respawn the vehicle
-private _respawnVehicle = {
+private _respawnVehicle = 
+{
     params ["_pos"];
+
+    // Debug message to confirm the function has been called
+    systemChat format ["Respawning scrap metal node at position: %1", _pos];
 
     // Adjustable respawn time
     sleep 100; // Wait for 100 seconds
