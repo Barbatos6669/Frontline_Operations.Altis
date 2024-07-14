@@ -1,3 +1,5 @@
+// scripts\resourceGathering\gatherScrapMetalAction.sqf
+
 // Description: This script handles the gathering of scrap metal from a node by a player.
 
 systemChat "Scrap metal action clicked"; // Debug message to confirm the script has been initialized

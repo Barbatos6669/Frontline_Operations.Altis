@@ -1,3 +1,5 @@
+// scripts\functions\fn_respawnScrapMetalNode.sqf
+
 // Description: This function handles the respawn of a scrap metal node after a set amount of time.
 
 params ["_pos"];

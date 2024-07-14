@@ -1,3 +1,5 @@
+// scripts\resourceGathering\scrapMetalNode.sqf
+
 // Description: This script handles the initialization of scrap metal nodes.
 
 systemChat "Scrap Metal Nodes Script initialized"; // Debug message to confirm the script has been initialized
@@ -26,7 +28,7 @@ else
             _vehicle setVariable ["scrapMetal", 10, true];
 
             // Add an action to the vehicle to allow players to gather scrap metal
-            _vehicle addAction ["Gather Scrap Metal", "scripts\resourceGathering\gatherScrapMetalAction.sqf", [], 0, false, true, "", "_this distance _target < 5"];
+            _vehicle addAction ["Gather Scrap Metal", "scripts\resourceGatheringgatherScrapMetalAction.sqf", [], 0, false, true, "", "_this distance _target < 5"];
 
             // Start the respawn script for this node
             [_markerPos] spawn compile preprocessFileLineNumbers "scripts\functions\fn_respawnScrapMetalNode.sqf";
