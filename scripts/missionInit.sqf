@@ -9,5 +9,6 @@
 [] execVM "scripts\functions\fn_addItemToInventory.sqf";
 [] execVM "scripts\functions\fn_getInventoryItems.sqf"; 
 [] execVM "scripts\resourceGathering\scrapMetalNode.sqf"; // Execute the scrapMetalNodes script
+[] execVM "scripts\bases\townHall\townHall.sqf"; // Initialize the Town Hall
 [] execVM "scripts\playerDataStats.sqf"; // Execute the playerDataStats script to initialize player variables
-[] execVM "scripts\bases\bunkerBase.sqf"; // Initialize the Bunker Base
+//[] execVM "scripts\bases\bunkerBase.sqf"; // Initialize the Bunker Base
